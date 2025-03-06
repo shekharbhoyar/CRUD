@@ -23,7 +23,7 @@ function Create() {
         <h3>Add New User</h3>
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">Name:</label>
+            <lable htmlFor="name">Name:</lable>
             <input
               type="text"
               name="name"
