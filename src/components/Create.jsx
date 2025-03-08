@@ -14,7 +14,13 @@ function Create() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    dispatch(addUser({ id: users[users.length - 1].id + 1, name, email }));
+    dispatch(
+      addUser({
+        id: users.length > 0 ? users[users.length - 1].id + 1 : 1,
+        name,
+        email,
+      })
+    );
     navigate("/");
   };
   return (
